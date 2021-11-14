@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7Ue8qu/jDWvUBYc33HdKzC4prq+8BKoEBFKEJS5FrigdPTesKw4b1urF/qsXZNDDxoBsm5wqKHy0XgLCt75bZQ==",
+  "dgSpecHash": "aVZSEKtXTC180nAzkEP034FlohnWsjxmBsUc+xO1aIGZQawgTpPl22wI5hCY3V57QwenzWihQe92T86qKJb6Uw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\Desktop\\EPAM\\AvatradeTests\\AvatradeTests\\AvatradeTests.csproj",
+  "projectFilePath": "C:\\bstu\\gitEPAM\\EPAM\\AvatradeTests\\AvatradeTests\\AvatradeTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\fluentassertions\\6.2.0\\fluentassertions.6.2.0.nupkg.sha512",

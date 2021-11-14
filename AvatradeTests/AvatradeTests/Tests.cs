@@ -68,7 +68,7 @@ namespace AvatradeTests
 
             System.Threading.Thread.Sleep(2000);
 
-            var submitBtn3 = _driver.FindElement(By.XPath("//li[@id='result-quotes-0']//div[text()='TSLA']"));
+            var submitBtn3 = _driver.FindElement(By.XPath("//div[text()='TSLA']"));
             submitBtn3.Click();
 
             System.Threading.Thread.Sleep(5000);
