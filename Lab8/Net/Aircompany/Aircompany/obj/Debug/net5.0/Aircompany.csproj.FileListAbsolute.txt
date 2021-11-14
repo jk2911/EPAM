@@ -1,0 +1,16 @@
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\bin\Debug\net5.0\Aircompany.exe
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\bin\Debug\net5.0\Aircompany.deps.json
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\bin\Debug\net5.0\Aircompany.runtimeconfig.json
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\bin\Debug\net5.0\Aircompany.runtimeconfig.dev.json
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\bin\Debug\net5.0\Aircompany.dll
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\bin\Debug\net5.0\ref\Aircompany.dll
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\bin\Debug\net5.0\Aircompany.pdb
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\obj\Debug\net5.0\Aircompany.csprojAssemblyReference.cache
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\obj\Debug\net5.0\Aircompany.GeneratedMSBuildEditorConfig.editorconfig
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\obj\Debug\net5.0\Aircompany.AssemblyInfoInputs.cache
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\obj\Debug\net5.0\Aircompany.AssemblyInfo.cs
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\obj\Debug\net5.0\Aircompany.csproj.CoreCompileInputs.cache
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\obj\Debug\net5.0\Aircompany.dll
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\obj\Debug\net5.0\ref\Aircompany.dll
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\obj\Debug\net5.0\Aircompany.pdb
+C:\bstu\gitEPAM\EPAM\Lab8\Net\Aircompany\Aircompany\obj\Debug\net5.0\Aircompany.genruntimeconfig.cache
