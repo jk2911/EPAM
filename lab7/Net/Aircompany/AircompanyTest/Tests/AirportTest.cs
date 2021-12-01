@@ -39,7 +39,7 @@ namespace AircompanyTests.Tests
         [Test]
         public void GetTransportMilitaryPlanes_HasAnyTransportMilitaryPlanes_ReturnsTrue()
         {
-            bool hasAnyTransportMilitaryPlanes = _airport.GetTransportMilitaryPlanes().Where(plane => plane.MilitaryPlaneType == MilitaryType.Transport).Any();
+            bool hasAnyTransportMilitaryPlanes = _airport.GetTransportMilitaryPlanes().Where(plane => plane.PlaneType == MilitaryType.Transport).Any();
             
             Assert.True(hasAnyTransportMilitaryPlanes);
         }

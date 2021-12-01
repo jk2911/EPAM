@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\AircompanyTest\\AircompanyTest.csproj": {}
+    "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\AircompanyTest\\AircompanyTest.csproj": {}
   },
   "projects": {
-    "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\AircompanyTest\\AircompanyTest.csproj": {
+    "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\AircompanyTest\\AircompanyTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\AircompanyTest\\AircompanyTest.csproj",
+        "projectUniqueName": "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\AircompanyTest\\AircompanyTest.csproj",
         "projectName": "AircompanyTest",
-        "projectPath": "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\AircompanyTest\\AircompanyTest.csproj",
+        "projectPath": "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\AircompanyTest\\AircompanyTest.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\AircompanyTest\\obj\\",
+        "outputPath": "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\AircompanyTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\Aircompany\\Aircompany.csproj": {
-                "projectPath": "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\Aircompany\\Aircompany.csproj"
+              "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\Aircompany\\Aircompany.csproj": {
+                "projectPath": "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\Aircompany\\Aircompany.csproj"
               }
             }
           }
@@ -72,18 +72,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\Aircompany\\Aircompany.csproj": {
+    "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\Aircompany\\Aircompany.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\Aircompany\\Aircompany.csproj",
+        "projectUniqueName": "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\Aircompany\\Aircompany.csproj",
         "projectName": "Aircompany",
-        "projectPath": "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\Aircompany\\Aircompany.csproj",
+        "projectPath": "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\Aircompany\\Aircompany.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\bstu\\gitEPAM\\EPAM\\Lab8\\Net\\Aircompany\\Aircompany\\obj\\",
+        "outputPath": "C:\\bstu\\gitEPAM\\EPAM\\lab7\\Net\\Aircompany\\Aircompany\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -126,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
