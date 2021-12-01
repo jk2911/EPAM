@@ -46,12 +46,14 @@ namespace AvatradeTests
         }
 
         [Test]
-        public void CreateDealToBuyBTCUSDTest()
+        public void AddStockInPortfolio()
         {
+            var element = "TSLA";
+
             var submitBtn = _driver.FindElement(By.XPath("//a[@href='/portfolios']"));
             submitBtn.Click();
 
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(2000);
 
             var submitBtn1 = _driver.FindElement(By.XPath("//a[@href='/portfolio/p_0/view']"));
             submitBtn1.Click();
@@ -68,14 +70,14 @@ namespace AvatradeTests
 
             System.Threading.Thread.Sleep(2000);
 
-            var submitBtn3 = _driver.FindElement(By.XPath("//li[@id='result-quotes-0']"));
-
-            System.Threading.Thread.Sleep(2000);
+            var submitBtn3 = _driver.FindElement(By.XPath("//div[text()='TSLA']"));
             submitBtn3.Click();
 
-            System.Threading.Thread.Sleep(5000);
+            System.Threading.Thread.Sleep(2000);
 
-            //Assert.AreEqual(ExpectedDeal, actualDeal);
+            var findElement = _driver.FindElement(By.XPath("//a[@title='Tesla, Inc.']")).Text;
+
+            Assert.AreEqual(element, findElement);
         }
 
         [TearDown]
