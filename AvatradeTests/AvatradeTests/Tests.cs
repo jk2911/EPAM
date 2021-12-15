@@ -16,7 +16,7 @@ namespace AvatradeTests
         private const string TestEmail = "maksgoy2911@gmail.com";
         private const string TestPassword = "EPAMPASS40";
 
-        private const string ExpectedDeal = "BTCUSD";
+        private const string ExpectedAddition = "TSLA";
 
         [SetUp]
         public void StartPageSetup()
@@ -48,7 +48,6 @@ namespace AvatradeTests
         [Test]
         public void AddStockInPortfolio()
         {
-            var element = "TSLA";
 
             var submitBtn = _driver.FindElement(By.XPath("//a[@href='/portfolios']"));
             submitBtn.Click();
@@ -75,9 +74,9 @@ namespace AvatradeTests
 
             System.Threading.Thread.Sleep(2000);
 
-            var findElement = _driver.FindElement(By.XPath("//a[@title='Tesla, Inc.']")).Text;
+            var ActualAddition = _driver.FindElement(By.XPath("//a[text()='TSLA']")).Text;
 
-            Assert.AreEqual(element, findElement);
+            Assert.AreEqual(ExpectedAddition, ActualAddition);
         }
 
         [TearDown]
