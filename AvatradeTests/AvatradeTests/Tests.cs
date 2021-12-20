@@ -48,7 +48,7 @@ namespace AvatradeTests
         [Test]
         public void AddStockInPortfolio()
         {
-
+            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(100));
             var submitBtn = _driver.FindElement(By.XPath("//a[@href='/portfolios']"));
             submitBtn.Click();
 
@@ -67,8 +67,9 @@ namespace AvatradeTests
             var inputAct = _driver.FindElement(By.XPath("//div[@id='dropdown-menu']//input[@type='text']"));
             inputAct.SendKeys("Tesla");
 
-            System.Threading.Thread.Sleep(2000);
+            //System.Threading.Thread.Sleep(3000);
 
+            wait.Until(webDriver => webDriver.FindElement(By.XPath("//div[text()='TSLA']")).Displayed);
             var submitBtn3 = _driver.FindElement(By.XPath("//div[text()='TSLA']"));
             submitBtn3.Click();
 
