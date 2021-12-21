@@ -7,21 +7,17 @@ using System.Threading.Tasks;
 
 namespace AvatradeTests.PageObjects
 {
-    public class AuthorizationPageObject
+    public class AuthorizationPageObject : BasePageObject
     {
-        private IWebDriver _webDriver;
         private By inputEmail = By.XPath("//input[@id='login-username']");
         private By NextBtn = By.XPath("//input[@id='login-signin']");
-        public AuthorizationPageObject(IWebDriver webDriver)
-        {
-            _webDriver = webDriver;
-        }
+        public AuthorizationPageObject(IWebDriver driver) : base(driver) { }
         public PasswordPageObject InputLogin(string login)
         {
             System.Threading.Thread.Sleep(400);
-            _webDriver.FindElement(inputEmail).SendKeys(login);
-            _webDriver.FindElement(NextBtn).Click();
-            return new PasswordPageObject(_webDriver);
+            driver.FindElement(inputEmail).SendKeys(login);
+            driver.FindElement(NextBtn).Click();
+            return new PasswordPageObject(driver);
         }
     }
 }

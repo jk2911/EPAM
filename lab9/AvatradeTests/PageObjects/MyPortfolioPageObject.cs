@@ -7,19 +7,15 @@ using System.Threading.Tasks;
 
 namespace AvatradeTests.PageObjects
 {
-    public class MyPortfolioPageObject
+    public class MyPortfolioPageObject : BasePageObject
     {
-        private IWebDriver _webDriver;
         private By myWatchlist = By.XPath("//a[@href='/portfolio/p_0/view']");
-        public MyPortfolioPageObject(IWebDriver webDriver)
-        {
-            _webDriver = webDriver;
-        }
-        public MyWatchlistPageObject MyWatchlist()
+        public MyPortfolioPageObject(IWebDriver driver) : base(driver) { }
+        public MyWatchlistPageObject SwitchMyWatchlist()
         {
             System.Threading.Thread.Sleep(1000);
-            _webDriver.FindElement(myWatchlist).Click();
-            return new MyWatchlistPageObject(_webDriver);
+            driver.FindElement(myWatchlist).Click();
+            return new MyWatchlistPageObject(driver);
         }
     }
 }

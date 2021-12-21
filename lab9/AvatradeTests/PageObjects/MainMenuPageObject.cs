@@ -7,24 +7,20 @@ using System.Threading.Tasks;
 
 namespace AvatradeTests.PageObjects
 {
-    public class MainMenuPageObject
+    public class MainMenuPageObject : BasePageObject
     {
-        private IWebDriver _webDriver;
         private By logInBtn = By.XPath("//div[@class='menu-section']//a[@id='header-signin-link']");
         private By myPortfolios = By.XPath("//a[@href='/portfolios']");
-        public MainMenuPageObject(IWebDriver webDriver)
-        {
-            _webDriver = webDriver;
-        }
+        public MainMenuPageObject(IWebDriver driver) : base(driver) { }
         public AuthorizationPageObject SignUp()
         {
-            _webDriver.FindElement(logInBtn).Click();
-            return new AuthorizationPageObject(_webDriver);
+            driver.FindElement(logInBtn).Click();
+            return new AuthorizationPageObject(driver);
         }
-        public MyPortfolioPageObject MyPortfolios()
+        public MyPortfolioPageObject SwitchToMyPortfolios()
         {
-            _webDriver.FindElement(myPortfolios).Click();
-            return new MyPortfolioPageObject(_webDriver);
+            driver.FindElement(myPortfolios).Click();
+            return new MyPortfolioPageObject(driver);
         }
     }
 }

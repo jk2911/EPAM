@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,31 +9,41 @@ using System.Threading.Tasks;
 
 namespace AvatradeTests.PageObjects
 {
-    public class MyWatchlistPageObject
+    public class MyWatchlistPageObject : BasePageObject
     {
-        private IWebDriver _webDriver;
         private By SearchPromotion  = By.XPath("//div[@data-test='add-symbol-btn']");
         private By InputPromotion  = By.XPath("//div[@id='dropdown-menu']//input[@type='text']");
-        private By AddPromotion = By.XPath("//div[text()='TSLA']");
+        private By AddPromotion = By.XPath("//*[@id=\"result-quotes-0\"]");
         private By ActualAddition = By.XPath("//a[text()='TSLA']");
-        public MyWatchlistPageObject(IWebDriver webDriver)
+        public MyWatchlistPageObject(IWebDriver driver) : base(driver) { }
+        public void AddStock(string promotion)
         {
-            _webDriver = webDriver;
+            System.Threading.Thread.Sleep(1000);
+            driver.FindElement(SearchPromotion).Click();
+            System.Threading.Thread.Sleep(1000);
+            driver.FindElement(InputPromotion).SendKeys(promotion);
+            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(100));
+            //wait.Until(webDriver => webDriver.FindElement(AddPromotion).Displayed);
+            System.Threading.Thread.Sleep(3000);
+            driver.FindElement(AddPromotion).Click();
+            return;
         }
-        public MyPortfolioPageObject MyPortfolios(string promotion)
+        public void DeleteStock()
         {
             System.Threading.Thread.Sleep(1000);
-            _webDriver.FindElement(SearchPromotion).Click();
+            driver.FindElement(SearchPromotion).Click();
             System.Threading.Thread.Sleep(1000);
-            _webDriver.FindElement(InputPromotion).SendKeys(promotion);
-            System.Threading.Thread.Sleep(1000);
-            _webDriver.FindElement(AddPromotion).Click();
-            return new MyPortfolioPageObject(_webDriver);
+            driver.FindElement(InputPromotion).SendKeys(promotion);
+            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(100));
+            //wait.Until(webDriver => webDriver.FindElement(AddPromotion).Displayed);
+            System.Threading.Thread.Sleep(3000);
+            driver.FindElement(AddPromotion).Click();
+            return;
         }
         public string SearchForAddedPromotion()
         {
             System.Threading.Thread.Sleep(1000);
-            return _webDriver.FindElement(ActualAddition).Text;
+            return driver.FindElement(ActualAddition).Text;
         }
     }
 }
