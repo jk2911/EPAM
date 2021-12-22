@@ -28,18 +28,18 @@ namespace AvatradeTests.PageObjects
             driver.FindElement(AddPromotion).Click();
             return;
         }
-        public void DeleteStock()
-        {
-            System.Threading.Thread.Sleep(1000);
-            driver.FindElement(SearchPromotion).Click();
-            System.Threading.Thread.Sleep(1000);
-            driver.FindElement(InputPromotion).SendKeys(promotion);
-            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(100));
-            //wait.Until(webDriver => webDriver.FindElement(AddPromotion).Displayed);
-            System.Threading.Thread.Sleep(3000);
-            driver.FindElement(AddPromotion).Click();
-            return;
-        }
+        //public void DeleteStock()
+        //{
+        //    System.Threading.Thread.Sleep(1000);
+        //    driver.FindElement(SearchPromotion).Click();
+        //    System.Threading.Thread.Sleep(1000);
+        //    driver.FindElement(InputPromotion).SendKeys(promotion);
+        //    //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(100));
+        //    //wait.Until(webDriver => webDriver.FindElement(AddPromotion).Displayed);
+        //    System.Threading.Thread.Sleep(3000);
+        //    driver.FindElement(AddPromotion).Click();
+        //    return;
+        //}
         public string SearchForAddedPromotion()
         {
             System.Threading.Thread.Sleep(1000);
