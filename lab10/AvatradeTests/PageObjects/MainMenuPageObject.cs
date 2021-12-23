@@ -21,7 +21,7 @@ namespace AvatradeTests.PageObjects
         }
         public MyPortfolioPageObject SwitchToMyPortfolios()
         {
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(3000);
             driver.FindElement(myPortfolios).Click();
             Log.Info("Switch To My Portfolios");
             return new MyPortfolioPageObject(driver);

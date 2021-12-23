@@ -6,6 +6,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using AvatradeTests.PageObjects;
+using AvatradeTests.Utils;
 
 namespace AvatradeTests.Test
 {
@@ -16,14 +17,22 @@ namespace AvatradeTests.Test
         [Test]
         public void AddStockInPortfolio()
         {
-            var main = new MainMenuPageObject(driver);
-            main.
+            bool main = new MainMenuPageObject(driver).
                 SwitchToMyPortfolios().
                 SwitchMyWatchlist().
                 AddStock(ExpectedAddition);
-
-            var watchlist = new MyWatchlistPageObject(driver);
-            Assert.AreEqual(watchlist.SearchForAddedPromotion(), ExpectedAddition);
+            Log.Info(main.ToString());
+            Assert.IsFalse(main);
+        }
+        [Test]
+        public void DeleteStockInPortfolio()
+        {
+            var main = new MainMenuPageObject(driver).
+                SwitchToMyPortfolios().
+                SwitchMyWatchlist().
+                DeleteStock();
+            Log.Info(main.ToString());
+            Assert.IsFalse(main);
         }
     }
 }
